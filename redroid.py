@@ -41,7 +41,7 @@ def main():
 
     args = parser.parse_args()
     dockerfile = dockerfile + \
-        "FROM redroid/redroid:{}-latest\n".format(
+        "FROM redroid/redroid:{}-arm64\n".format(
             args.android)
     tags.append(args.android)
     if args.gapps:
